@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Peliculas</title>
+  </head>
+  <body>
+    <form method="post" action="miservidor.php">
+    <div>
+      <label for="codigoPostoal">Código Postal:</label>
+      <input id="codigoPostal" type="text" maxlength="5" required="true">
+    </div>
+    <div>
+      <label for="nivel">Nivel de Satifacciíon:</label>
+      <select id="nivel">
+        <option value="1">1</option>
+        <option value="2">2</option>	
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+  </div>
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" type="email" required="true">
+    </div>
+    <div>
+      <label for="puntosPositivos">Puntos Positivos:</label>
+      <textarea id="puntosPositivos"></textarea>
+    </div>
+    <div>
+      <label for="puntosNegativos">Puntos Positivos:</label>
+      <textarea id="puntosNegativos"></textarea>
+    </div>
+   <div>
+   	<strong>Características:</strong><br>
+      <label for="calidad">Calidad</label>
+      <select id="calidad">
+        <option value="excelente">Excelente</option>
+        <option value="bueno">Bueno</option>
+        <option value="regular">Regular</option>
+        <option value="pesimo">Pésimo</option>
+      </select>
+      <br><label for="sonido">Sonido</label>
+		  <input type="radio" id="sonido" name="sonido" value="excelente"> Excelente
+		  <input type="radio" id="sonido" name="sonido" value="bueno"> Bueno
+		  <input type="radio" id="sonido" name="sonido" value="pesimo"> Malo
+		  <input type="radio" id="sonido" name="sonido" value="pesimo"> Pésimo
+  	</div>
+  <input type="submit" value="Enviar"> 
+</form>
+  </body>
+</html>
