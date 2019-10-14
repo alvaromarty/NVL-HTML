@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>CuidadoAnimal</title>
+  </head>
+  <body>
+    <div align="center">
+      <h1 align="center">Cuidado de Mascotas</h1>
+      <b>
+        <a href="NVL-HTML-Final.html">Inicio</a>
+        <a href="NVL-HTML-Final-Info.html">Quienes somos</a>
+        <a href="NVL-HTML-Final-Servicios.html">Servicios</a>
+        <a href="NVL-HTML-Final-Precio.html">Precio</a>
+        <a href="NVL-HTML-Final-Contacto.html">Contacto</a>
+      </b>
+    </div>
+    <div>
+    <form method="post" action="miservidor.php">
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input id="nombre" type="text" required="true">
+    </div>
+    <div>
+      <label for="apellido">Apellido:</label>
+      <input id="apellido" type="text" required="true">
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" type="email" required="true">
+    </div>
+   <div>
+    <strong>Plan de Servicios:</strong><br>
+      <label for="servicio">Calidad</label>
+      <select id="sirvicio">
+        <option value="simple">Simple</option>
+        <option value="guarderia">Guardería</option>
+        <option value="adiestramiento">Adiestramiento</option>
+        <option value="completo">Completo</option>
+      </select>
+    </div>
+    <div>
+      <label for="dudas">Dudas del servicio:</label>
+      <textarea id="puntosNegativos"></textarea>
+    </div>
+  <input type="submit" value="Enviar"> 
+</form>
+  </body>
+</html>
